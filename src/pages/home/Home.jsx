@@ -1,8 +1,9 @@
 import React from "react";
 import home from "./home.module.css";
 import Particles from "react-tsparticles";
-import resume from './Janamjay Resume.pdf'
+import resume from "./Janamjay Resume.pdf";
 import { loadFull } from "tsparticles";
+import { Link } from "react-router-dom";
 
 const Home = () => {
   const particlesInit = async (main) => {
@@ -14,8 +15,15 @@ const Home = () => {
         <h1>Hi , I am Janamjay</h1>
         <p>FrontEnd Developer</p>
         <div className={home.approach}>
-          <button>Hire</button>
-          <button><a href={resume} target="_blank" rel="noreferrer">Resume</a></button>
+          <button>
+            <Link to="/contact">Hire</Link>
+          </button>
+
+          <button>
+            <a href={resume} target="_blank" rel="noreferrer">
+              Resume
+            </a>
+          </button>
         </div>
       </div>
       <div className={home.particle}>

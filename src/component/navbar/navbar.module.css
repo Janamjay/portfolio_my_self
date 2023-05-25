@@ -99,6 +99,13 @@
     right: 0%;
     top: 55px;
   }
+  .Active_Links a {
+    text-decoration: none;
+    list-style: none;
+    cursor: pointer;
+    color: grey;
+    font-size: 20px;
+  }
 
   .Active_Links li {
     list-style: none;
@@ -131,7 +138,13 @@
     right: 0%;
     top: 48px;
   }
-
+  .Active_Links a {
+    text-decoration: none;
+    list-style: none;
+    cursor: pointer;
+    color: grey;
+    font-size: 20px;
+  }
   .Active_Links li {
     list-style: none;
     margin-top: 20px;
