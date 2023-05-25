@@ -12,8 +12,8 @@ const Home = () => {
   return (
     <div className={home.main_container}>
       <div className={home.content}>
-        <h1>Hi , I am Janamjay</h1>
-        <p>FrontEnd Developer</p>
+        <h1 className={home.slide_left}>Hi , I am Janamjay</h1>
+        <p className={home.slide_right}>FrontEnd Developer</p>
         <div className={home.approach}>
           <button>
             <Link to="/contact">Hire</Link>
