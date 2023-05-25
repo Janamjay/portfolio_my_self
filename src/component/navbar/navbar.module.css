@@ -5,7 +5,7 @@
     justify-content: space-between;
     position: sticky;
     z-index: 10;
-    padding: 10px 0;
+    padding: 13px 0;
     top: 0;
   }
   
@@ -18,26 +18,16 @@
     color: grey;
     font-size: 18px;
   }
-  
+  .title h1:hover {
+    color: goldenrod;
+  }
+
   .right {
     margin-right: 24px;
     display: flex;
     align-items: center;
   }
-  
-  .right li,
-   a {
-    text-decoration: none;
-    list-style: none;
-    cursor: pointer;
-    color: grey;
-    font-size: 18px;
-  }
-  
-  .right a:hover {
-    color: white;
-  }
-  
+
   .common {
     margin: 0 10px;
   }
@@ -52,7 +42,7 @@
   }
   
   .right a:hover {
-    color: white;
+    color: goldenrod;
   }
 
 

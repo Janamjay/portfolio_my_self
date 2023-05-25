@@ -17,6 +17,9 @@ export default function Navbar() {
             <Link to="/"> Home</Link>
           </li>
           <li className={nav.common}>
+            <Link to="/work"> Work</Link>
+          </li>
+          <li className={nav.common}>
             <Link to="/about">About Me</Link>
           </li>
           <li className={nav.common}>
