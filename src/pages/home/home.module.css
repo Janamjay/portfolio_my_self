@@ -1,26 +1,46 @@
-.content{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 91vh;
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 91vh;
 }
-.content h1 , p{
-    color: grey;
+.content h1,
+.content p {
+  color: grey;
 }
-.content h1{
-    font-size: 4rem;
-    font-weight: 500;
-    margin-bottom: 1rem;
+.content h1 {
+  font-size: 4rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
 }
-.content p{
-    font-size: 2rem;
-    font-weight: 500;
+.content p {
+  font-size: 2rem;
+  font-weight: 500;
 }
 
-.content  p:hover{
-    color: white;
+.content p:hover {
+  color: white;
 }
-.content  h1:hover{
-    color: white;
+.content h1:hover {
+  color: white;
+}
+.approach > button {
+  padding: 12px 18px;
+  margin-right: 1rem;
+  margin-top: 2rem;
+  outline: none;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  background-color: goldenrod;
+  cursor: pointer;
+}
+.approach > button:hover {
+  box-shadow: 0 0 10px grey;
+  background-color: rgb(188, 137, 7);
+}
+.approach > button a {
+  text-decoration: none;
+  color: white;
 }

@@ -1,22 +1,22 @@
 import React from "react";
-import home from './home.module.css';
+import home from "./home.module.css";
 import Particles from "react-tsparticles";
+import resume from './Janamjay Resume.pdf'
 import { loadFull } from "tsparticles";
 
 const Home = () => {
   const particlesInit = async (main) => {
-    console.log(main);
-
-    // you can initialize the tsParticles instance (main) here, adding custom shapes or presets
-    // this loads the tsparticles package bundle, it's the easiest method for getting everything ready
-    // starting from v2 you can add only the features you need reducing the bundle size
     await loadFull(main);
   };
   return (
     <div className={home.main_container}>
       <div className={home.content}>
-        <h1>Hi I am Janamjay</h1>
+        <h1>Hi , I am Janamjay</h1>
         <p>FrontEnd Developer</p>
+        <div className={home.approach}>
+          <button>Hire</button>
+          <button><a href={resume} target="_blank" rel="noreferrer">Resume</a></button>
+        </div>
       </div>
       <div className={home.particle}>
         <Particles
