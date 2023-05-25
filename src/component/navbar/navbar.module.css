@@ -1,0 +1,150 @@
+
+.main {
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    z-index: 10;
+    padding: 10px 0;
+    top: 0;
+  }
+  
+  .left {
+    margin-left: 40px;
+  }
+  .title h1{
+    text-decoration: none;
+    cursor: pointer;
+    color: grey;
+    font-size: 18px;
+  }
+  
+  .right {
+    margin-right: 24px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .right li,
+   a {
+    text-decoration: none;
+    list-style: none;
+    cursor: pointer;
+    color: grey;
+    font-size: 18px;
+  }
+  
+  .right a:hover {
+    color: white;
+  }
+  
+  .common {
+    margin: 0 10px;
+  }
+  
+  .right li,
+  a {
+    text-decoration: none;
+    list-style: none;
+    cursor: pointer;
+    color: grey;
+    font-size: 20px;
+  }
+  
+  .right a:hover {
+    color: white;
+  }
+
+
+  /* responsive button ++++++++ */
+  
+  .mobile_navbar_btn {
+    display: none;
+  }
+  
+  .mobile_navbar_btn > div {
+    display: flex;
+    align-items: center;
+    height: 100%;
+  }
+  
+  .mobile_navbar_btn > div > span {
+    color: white;
+    z-index: 10;
+  }
+  
+  .mobile_navbar_btn > div > span > svg {
+    height: 20px;
+    width: 20px;
+  }
+  
+  /* ++++++++++ Responsive +++++++++++ */
+  
+  /* ============ Phone ============= */
+  @media (max-width: 500px) {
+    .right {
+      display: none;
+    }
+  
+    .mobile_navbar_btn {
+      display: block;
+      margin-right: 10px;
+    }
+  
+    .left {
+      margin-left: 10px;
+    }
+    /* for navbar  */
+    .main {
+      position: sticky;
+    }
+  
+    .Active_Links {
+      display: block;
+      background-color: #1d252d;
+      height: 100vh;
+      width: 50%;
+      text-align: left;
+      position: fixed;
+      right: 0%;
+      top: 55px;
+    }
+  
+    .Active_Links li {
+      list-style: none;
+      margin-top: 10px;
+      margin: 20px;
+    }
+  }
+  
+  /* ============ Tablet ============= */
+  @media (max-width: 900px) {
+    .right {
+      display: none;
+    }
+  
+    .mobile_navbar_btn {
+      display: block;
+      margin-right: 20px;
+    }
+  
+    .left {
+      margin-left: 20px;
+    }
+    .Active_Links {
+      display: block;
+      text-align: left;
+      background-color: black;
+      height: 100vh;
+      width: 50%;
+      position: fixed;
+      right: 0%;
+      top: 48px;
+    }
+  
+    .Active_Links li {
+      list-style: none;
+      margin-top: 20px;
+      margin: 20px;
+    }
+  }
