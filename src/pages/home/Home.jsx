@@ -4,6 +4,7 @@ import Particles from "react-tsparticles";
 import resume from "./Janamjay Resume.pdf";
 import { loadFull } from "tsparticles";
 import { Link } from "react-router-dom";
+import { Typewriter } from "react-simple-typewriter";
 
 const Home = () => {
   const particlesInit = async (main) => {
@@ -13,7 +14,19 @@ const Home = () => {
     <div className={home.main_container}>
       <div className={home.content}>
         <h1 className={home.slide_left}>Hi , I am Janamjay</h1>
-        <p className={home.slide_right}>FrontEnd Developer</p>
+        <p className={home.slide_right}>
+          <Typewriter
+            words={[
+              "FrontEnd Developer",
+              "UI Designer",
+              "React Developer",
+            ]}
+            loop={500}
+            typeSpeed={200}
+            deleteSpeed={80}
+            delaySpeed={1000}
+          />
+        </p>
         <div className={home.approach}>
           <button>
             <Link to="/contact">Hire</Link>

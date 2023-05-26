@@ -13,16 +13,16 @@ export default function Navbar() {
           </div>
         </div>
         <div className={`${show ? nav.Active_Links : nav.right} `}>
-          <li className={nav.common}>
+          <li className={nav.common} onClick={() => setShow(false)}>
             <Link to="/"> Home</Link>
           </li>
-          <li className={nav.common}>
+          <li className={nav.common} onClick={() => setShow(false)}>
             <Link to="/work"> Work</Link>
           </li>
-          <li className={nav.common}>
+          <li className={nav.common} onClick={() => setShow(false)}>
             <Link to="/about">About Me</Link>
           </li>
-          <li className={nav.common}>
+          <li className={nav.common} onClick={() => setShow(false)}>
             <Link to="/contact">Contact Me</Link>
           </li>
         </div>
