@@ -1,7 +1,9 @@
 .content{
     padding: 20px;
+    box-sizing: border-box;
+    height: 91vh;
+    width: 100%;
 }
-
 .header{
     color: goldenrod;
     display: inline-block;

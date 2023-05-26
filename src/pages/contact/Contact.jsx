@@ -2,10 +2,17 @@ import React from "react";
 import con from "./contact.module.css";
 import { Animate } from "react-simple-animate";
 import { BsInfoCircleFill } from "react-icons/bs";
+import galaxy from './images/galaxy.png';
 
 const Contact = () => {
   return (
-    <div className={con.content}>
+    <div className={con.content}
+    style={{
+      background:`url(${galaxy})`,
+      backgroundPosition: 'center',
+      backgroundSize: 'cover',
+    }}
+    >
       <Animate
         play
         duration={1}
