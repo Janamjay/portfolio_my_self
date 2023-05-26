@@ -17,13 +17,13 @@
     box-sizing: border-box;
 }
 .image{
-    height: 55vh;
+    height: 62vh;
     border-radius: 14px;
     box-shadow: 0 0  10px grey;
 
 }
 .image img{
-    height: 55vh;
+    height: 62vh;
     border-radius: 14px;
 }
 
@@ -46,7 +46,6 @@
 .content p{
     line-height:1.6;
     font-size: 19px;
-    padding-bottom: 1rem;
     color: white;
     letter-spacing: 1px;
     word-spacing:2px;    
