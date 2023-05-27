@@ -1,6 +1,8 @@
 .main_container{
     background-color: #191825;
     height: 100%;
+    box-sizing: border-box;
+    overflow-x: hidden;
 }
 .header{
     padding: 20px;
@@ -17,16 +19,31 @@
     box-sizing: border-box;
 }
 .image{
-    height: 62vh;
+    height: 55vh;
     border-radius: 14px;
     box-shadow: 0 0  10px grey;
 
 }
 .image img{
-    height: 62vh;
+    height: 55vh;
     border-radius: 14px;
 }
-
+.icons{
+    display: flex;
+    justify-content: center;
+    margin-top: 0.5rem;
+}
+.icons img{
+    height: 3rem;
+    margin-left: 10px;
+    cursor: pointer;
+    padding: 5px;
+    box-sizing: border-box;
+}
+.icons img:hover{
+    box-shadow: 0 0  10px grey;
+    border-radius: 8px;
+}
 .content{
     padding: 20px;
     padding-top: 0;
@@ -37,10 +54,12 @@
 .content h2{
     padding-bottom: 1rem;
     color: goldenrod;
+    box-sizing: border-box;
 }
 .content h3{
     font-size: 18px;
     padding-bottom: 1rem;
+    box-sizing: border-box;
     color: rgb(158, 147, 89);
 }
 .content p{
@@ -56,6 +75,7 @@
 
 .main_skill{
     padding: 2rem;
+    box-sizing: border-box;
 }
 .skill_header > h1{ 
     font-size: 2rem;
@@ -69,6 +89,7 @@
     grid-template-columns: repeat(2,1fr);
     row-gap:  30px;
     column-gap: 50px;
+    box-sizing: border-box;
 }
 
 .skill_bar{

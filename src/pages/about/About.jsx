@@ -1,8 +1,17 @@
-import React from "react";
+import React, { useRef,useEffect } from "react";
 import about from "./about.module.css";
 import { Animate } from "react-simple-animate";
-import self from './images/self.jpg';
+import { Link } from "react-router-dom";
+import Skill from "../skill/Skill";
+
+//images
+import git from "./images/github.png";
+import linkedin from "./images/linkedin.png";
+import email from "./images/email.png";
+import self from "./images/self.jpg";
+
 const About = () => {
+ 
   return (
     <div className={about.main_container}>
       <Animate
@@ -29,10 +38,21 @@ const About = () => {
           }}
         >
           <div className={about.image}>
-            <img
-              src={self}
-              alt="me"
-            />
+            <img src={self} alt="me" />
+          </div>
+          <div className={about.icons}>
+            <Link to="https://github.com/Janamjay" target="_blank">
+              <img src={git} alt="git" />
+            </Link>
+            <Link
+              to="https://www.linkedin.com/in/janamjay-kumar-7255a0210/"
+              target="_blank"
+            >
+              <img src={linkedin} alt="linkedin" />
+            </Link>
+            <Link to="mailto:janamjayk6@gmail.com" target="_blank">
+              <img src={email} alt="email" />
+            </Link>
           </div>
         </Animate>
         <div className={about.content}>
@@ -56,9 +76,9 @@ const About = () => {
               I craft stunning websites that captivate and engage visitors. With
               expertise in HTML, CSS, JavaScript, and various frontend
               frameworks, I have successfully delivered numerous projects that
-              blend aesthetics with functionality. Explore my work below to see
-              how I turn ideas into pixel-perfect reality. Let's collaborate and
-              bring your digital vision to life!"
+              blend aesthetics with functionality. Explore my work to see how I
+              turn ideas into pixel-perfect reality. Let's collaborate and bring
+              your digital vision to life!"
             </p>
           </Animate>
         </div>
@@ -107,9 +127,7 @@ const About = () => {
               </div>
             </div>
           </div>
-          <div className={about.skill_right}>
-            <h3>Professional Skills</h3>
-          </div>
+            <Skill/>
         </div>
       </section>
     </div>
