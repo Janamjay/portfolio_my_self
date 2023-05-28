@@ -1,0 +1,46 @@
+.project {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.project h1 {
+  margin-top: 14px;
+  margin-bottom: 2rem;
+  color: goldenrod;
+  font-size: 34px;
+}
+.project img {
+  width: 40rem;
+  border-radius: 10px;
+}
+.project img:hover {
+  box-shadow: 0 0 15px grey;
+  transition: 0.3s ease-in;
+  cursor: pointer;
+}
+.project p {
+  font-size: 30px;
+  color: goldenrod;
+  margin-top: 1rem;
+}
+
+/* responsive */
+
+@media(max-width:800px){
+  .project img {
+    width: 21rem;
+    height: auto;
+  }
+  .project p {
+    font-size: 25px;
+    margin: 2rem;
+    text-align: center;
+    word-break: break-word;
+  }
+  .project h1 {
+    font-size: 24px;
+    margin-bottom: 1rem;
+  }
+}

@@ -76,3 +76,36 @@
     transform: translateX(0);
   }
 }
+
+
+/* CSS for phone view */
+@media (max-width: 480px) {
+  .content h1 {
+    font-size: 3rem;
+  }
+
+  .content p {
+    font-size: 1.5rem;
+  }
+
+  .approach > button {
+    margin-top: 1.5rem;
+    font-size: 1rem;
+  }
+}
+
+/* CSS for tablet view */
+@media (min-width: 481px) and (max-width: 768px) {
+  .content h1 {
+    font-size: 3.5rem;
+  }
+
+  .content p {
+    font-size: 1.8rem;
+  }
+
+  .approach > button {
+    margin-top: 1.8rem;
+    font-size: 1.2rem;
+  }
+}

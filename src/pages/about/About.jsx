@@ -1,4 +1,4 @@
-import React, { useRef,useEffect } from "react";
+import React from "react";
 import about from "./about.module.css";
 import { Animate } from "react-simple-animate";
 import { Link } from "react-router-dom";

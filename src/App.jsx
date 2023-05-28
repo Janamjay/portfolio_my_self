@@ -5,7 +5,8 @@ import { Routes, Route } from "react-router-dom";
 import Home from "./pages/home/Home";
 import About from "./pages/about/About";
 import Contact from "./pages/contact/Contact";
-import Work from "./pages/work/Work";
+import Project from "./pages/work/Project";
+import ProjectDisplay from "./pages/work/ProjectDisplay";
 
 function App() {
   return (
@@ -13,7 +14,8 @@ function App() {
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/work" element={<Work />} />
+        <Route path="/project" element={<Project />} />
+        <Route path="/project/:id" element={<ProjectDisplay />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>

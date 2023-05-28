@@ -47,7 +47,6 @@
   position: absolute;
   border-radius: 3px;
   transform: rotate(calc(var(--i) * var(--rot))) translateY(-45px);
-
 }
 
 .circle .points.marked {
@@ -63,5 +62,43 @@
   100% {
     background-color: goldenrod;
     box-shadow: 0 0 10px rgb(209, 154, 14);
+  }
+}
+
+/* Media Queries */
+
+@media (max-width: 768px) {
+  .professional {
+    grid-template-columns: 1fr;
+  }
+
+  .box {
+    flex: 1 1 auto;
+  }
+
+  .box .text {
+    font-size: 0.9rem;
+  }
+
+  .box .text big {
+    top: 45%;
+  }
+}
+
+@media (max-width: 480px) {
+  .circle {
+    height: 6rem;
+  }
+
+  .circle .points {
+    transform: rotate(calc(var(--i) * var(--rot))) translateY(-40px);
+  }
+
+  .box .text {
+    font-size: 0.8rem;
+  }
+
+  .box .text big {
+    top: 50%;
   }
 }
