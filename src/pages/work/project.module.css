@@ -6,6 +6,7 @@
   align-items: center;
   flex-direction: column;
   background-color: #191825;
+  overflow: hidden;
 }
 .projectList {
   width: 70vw;

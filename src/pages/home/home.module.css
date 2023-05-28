@@ -81,7 +81,7 @@
 /* CSS for phone view */
 @media (max-width: 480px) {
   .content h1 {
-    font-size: 3rem;
+    font-size: 2rem;
   }
 
   .content p {
