@@ -8,7 +8,7 @@ import Skill from "../skill/Skill";
 import git from "./images/github.png";
 import linkedin from "./images/linkedin.png";
 import email from "./images/email.png";
-import self from "./images/self.jpg";
+import me from "./images/me.jpg";
 
 const About = () => {
  
@@ -38,7 +38,7 @@ const About = () => {
           }}
         >
           <div className={about.image}>
-            <img src={self} alt="me" />
+            <img src={me} alt="me" />
           </div>
           <div className={about.icons}>
             <Link to="https://github.com/Janamjay" target="_blank">
