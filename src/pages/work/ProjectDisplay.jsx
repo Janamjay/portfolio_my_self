@@ -5,6 +5,8 @@ import Particles from "react-tsparticles";
 import { loadFull } from "tsparticles";
 import dis from "./projectdisplay.module.css";
 import { Animate } from "react-simple-animate";
+import browser from "./images/browser.png";
+import git from "./images/git.png";
 
 function ProjectDisplay() {
   const { id } = useParams();
@@ -28,9 +30,27 @@ function ProjectDisplay() {
         >
           <h1> {project.name}</h1>
         </Animate>
-        <Link to={project.deployLink} target="_blank" rel="noopener noreferrer">
-          <img src={project.image} />
-        </Link>
+        <div className={dis.mainImage}>
+          <img src={project.image} alt="projects" />
+          <div className={dis.browser}>
+            <Link
+              to={project.deployLink}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src={browser} alt="deploy" />
+            </Link>
+          </div>
+          <div className={dis.git}>
+            <Link
+              to={project.githubLink}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src={git} alt="github" />
+            </Link>
+          </div>
+        </div>
         <p>
           <b>Skills:</b> &nbsp; {project.skills}
         </p>

@@ -11,11 +11,59 @@
   color: goldenrod;
   font-size: 34px;
 }
-.project img {
+.mainImage{
   width: 40rem;
+  height: 20rem;
+  border-radius: 10px;
+  position: relative;
+}
+.mainImage > img {
+  width: 100%;
+  height: 100%;
   border-radius: 10px;
 }
-.project img:hover {
+.browser{
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  bottom: 10px;
+  left: 10px;
+  background-color: black;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.browser img{
+  width: 100%;
+  height: 100%;
+  filter: invert(100%);
+}
+.browser  img:hover {
+  box-shadow: 0 0 15px black;
+  transition: 0.3s ease-in;
+  cursor: pointer;
+  border-radius: 50%;
+}
+.git{
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  bottom: 10px;
+  right: 10px;
+  background-color: black;
+  border-radius: 50%;
+}
+.git img{
+  width: 100%;
+  height: 100%;
+  filter: invert(100%);
+}
+.git img:hover {
+  box-shadow: 0 0 15px black;
+  transition: 0.3s ease-in;
+  cursor: pointer;
+  border-radius: 50%;
+}
+.mainImage >img:hover {
   box-shadow: 0 0 15px grey;
   transition: 0.3s ease-in;
   cursor: pointer;
@@ -28,17 +76,34 @@
 
 /* responsive */
 
-@media(max-width:800px){
-  .project img {
-    width: 21rem;
+@media (max-width: 800px) {
+  .mainImage {
+    width: 100%;
     height: auto;
+    max-width: 400px;
+    max-height: 300px;
   }
+
+  .mainImage > img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+  }
+
+  .browser,
+  .git {
+    width: 30px;
+    height: 30px;
+    bottom: 8px;
+  }
+
   .project p {
     font-size: 25px;
     margin: 2rem;
     text-align: center;
     word-break: break-word;
   }
+
   .project h1 {
     font-size: 24px;
     margin-bottom: 1rem;
