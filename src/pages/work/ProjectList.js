@@ -10,7 +10,7 @@ export const ProjectList = [
     name: "College Website",
     image: Proj1,
     skills: "JavaScript,HTML,CSS,PHP,MySQL",
-    deployLink : "https://lnmi-patac.000webhostapp.com/",
+    deployLink : "https://lnmi.netlify.app/",
     githubLink : "https://github.com/Janamjay/Milestones/tree/LNMI"
   },
   {
